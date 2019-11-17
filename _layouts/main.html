@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    <div class="site">
+
+        <header class="site-header">
+            <h1><a href="/">{{ site.title }}</a></h1>
+                <!-- <p>{{ site.description }}</p> -->
+                <nav class="site-nav">
+                    <ul>
+                        {% for page in site.pages %}
+                        {% if page.title %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+        </header>
+            
+        <h2>{{ page.title }}</h2>
+        
+        <main class="site-main">
+            {{ content }}
+        </main>    
+                
+        <footer class="site-footer">
+            <section class="sitemap">
+                <header>
+                    <h4>Карта на сайта</h4>
+                </header>
+                <div class="sitemap-nav">
+                    <ul>
+                        {% for page in site.pages %}                        
+                        {% if page.title %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="footer-contacts">
+                <header>
+                    <h4>Контакти</h4>
+                </header>
+                <div class="footer-contacts-list">
+                    <ul>
+                        <li><a href="tel:+359 889 203 700;">+359 889 203 700</a></li>
+                        <li><a href="mailto:kalininova@abv.bg">kalininova@abv.bg</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
