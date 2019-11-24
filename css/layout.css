@@ -1,0 +1,64 @@
+.site {
+    max-width: 100%;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffffff;
+}
+
+.site-title h1 {
+    list-style: none;
+}
+
+.site-title a {
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #000000;
+}
+.site-nav  {
+    display: block;
+}
+
+.site-nav ul {
+    display: flex;
+}    
+
+.site-nav li {
+    line-height: 0;
+    display: block;
+    margin: 0 0.5em;
+    list-style: none;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+}
+
+.site-main {
+    width: 60em;
+    margin: 0 auto;
+}
+
+.site-main h2 {
+    padding: 1em 1em 1em 0;
+}
+
+.site-main li {
+    list-style-type: square;
+    margin-left: 1.5em;
+}    
+
+.page-fun li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.site-footer {
+    margin: 2em auto 0;
+    padding-top: 1em;
+    width: 70em;
+}
+
+.site-footer a {
+    font-size: 0.8em;
+}
