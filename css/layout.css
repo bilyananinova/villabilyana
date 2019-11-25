@@ -1,12 +1,19 @@
 .site {
     max-width: 100%;
+    background-image: linear-gradient(to right bottom, #ffffff, #e8d6ff, #e2a9f3, #e573da, #eb12b2);
+    color: #5e5959;
 }
 
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow:20px 20px 10px grey; 
     background: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .site-title h1 {
@@ -14,6 +21,7 @@
 }
 
 .site-title a {
+    color: #e2a9f3;
     font-weight: 900;
     text-shadow: 2px 2px 2px #000000;
 }
