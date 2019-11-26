@@ -1,0 +1,31 @@
+.page .site {
+    background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2, #cbffc2);
+}    
+
+.page .site-title a {
+    color: #73ffb9;
+}
+
+.pageprices .site {
+    background-image: linear-gradient(to bottom, #ffffff, #f7f2ff, #f4e3ff, #f4d3ff, #f8c2ff);
+}
+
+.pageprices .site-title a {
+    color: #ee8efa;
+}
+
+.pagefun .site {
+    background-image: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffe0a5, #f5f178);
+}
+
+.pagefun .site-title a {
+    color: #fdf857;
+}
+
+.pagecontacts .site {
+    background-image: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
+}
+
+.pagecontacts .site-title a {
+    color: #ff9b6e;
+}
