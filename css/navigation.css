@@ -15,6 +15,26 @@
     list-style: none;
     padding: 0.7em 0.5em;
     border-radius: 0.5em;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+
+    50% {
+        /* transform: translateY(15vh); */
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .site-nav ul a {
@@ -24,19 +44,23 @@
 .site-nav li:nth-child(1) {
     border: 2px solid rgb(7, 242, 207);
     background: rgba(7, 242, 207, 0.3);
+    animation-duration: 1s;
 }
 
 .site-nav li:nth-child(2) {
     border: 2px solid rgb(214, 135, 245);
     background: rgba(214, 135, 245, 0.3);
+    animation-duration: 2s;
 }
 
 .site-nav li:nth-child(3) {
     border: 2px solid rgb(245, 241, 120);
     background: rgba(255, 253, 149, 0.8);
+    animation-duration: 3s;
 }
 
 .site-nav li:nth-child(4) {
     border: 2px solid rgb(255, 176, 140);
     background: rgba(255, 176, 140, 0.3);
+    animation-duration: 4s;
 }
