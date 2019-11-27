@@ -1,6 +1,7 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css"); 
+
 .site {
     max-width: 100%;
-    background-image: linear-gradient(to right bottom, #ffffff, #e8d6ff, #e2a9f3, #e573da, #eb12b2);
     color: #5e5959;
 }
 
@@ -20,22 +21,6 @@
     font-weight: 900;
     text-shadow: 2px 2px 2px #000000;
 }
-.site-nav  {
-    display: block;
-}
-
-.site-nav ul {
-    display: flex;
-}    
-
-.site-nav li {
-    line-height: 0;
-    display: block;
-    margin: 0 0.5em;
-    list-style: none;
-    padding: 0.7em 0.5em;
-    border-radius: 0.5em;
-}
 
 .site-main {
     width: 60em;
@@ -51,11 +36,6 @@
     margin-left: 1.5em;
 }    
 
-.page-fun li {
-    list-style: none;
-    margin-left: 0;
-}
-
 .site-footer {
     margin: 2em auto 0;
     padding-top: 1em;
@@ -64,4 +44,21 @@
 
 .site-footer a {
     font-size: 0.8em;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.facebook {
+    font-size: 2em;
+}
+
+.copiryght {
+    text-align: center;
+    font-size: 0.6em;
+    background: #ffffff;
+    padding-top: 0.8em;
 }

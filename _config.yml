@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Вила Биляна
-email: myemail@example.com
+email: bilyanamail@example.com
+phone: +359 888 888 888
 description: Почивка в Сърбия
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

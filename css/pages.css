@@ -1,9 +1,15 @@
+/* All css about different layouts */ 
+
 .page .site {
     background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2, #cbffc2);
 }    
 
 .page .site-title a {
     color: #73ffb9;
+}
+
+.page .site-footer {
+    background: #90fcc6;
 }
 
 .pageprices .site {
@@ -14,12 +20,25 @@
     color: #ee8efa;
 }
 
+.pageprices .site-footer {
+    background: #ee8efa;
+}
+
 .pagefun .site {
     background-image: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffe0a5, #f5f178);
 }
 
 .pagefun .site-title a {
     color: #fdf857;
+}
+
+.pagefun li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.pagefun .site-footer {
+    background: #fffa6e;
 }
 
 .pagecontacts .site {
@@ -29,3 +48,14 @@
 .pagecontacts .site-title a {
     color: #ff9b6e;
 }
+
+.contacts li {
+    padding: 0.5em 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pagecontacts .site-footer {
+    background: #ff9b6e;
+}
+

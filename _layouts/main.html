@@ -28,31 +28,52 @@
         </main>    
                 
         <footer class="site-footer">
-            <section class="sitemap">
-                <header>
-                    <h4>Карта на сайта</h4>
-                </header>
-                <div class="sitemap-nav">
-                    <ul>
-                        {% for page in site.pages %}                        
-                        {% if page.title %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
+
+            <section class="contacts-list"> 
+
+                <section class="sitemap">
+                    <header>
+                        <h4>{{ site.title }}</h4>
+                    </header>
+                    <div class="sitemap-nav">
+                        <ul>
+                            {% assign navigation_pages = site.pages | sort:"order" %}
+                                {% for page in navigation_pages %}
+                                    {% if page.title %}
+                                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="footer-contacts">
+                    <header>
+                        <h4>Контакти</h4>
+                    </header>
+                    <div class="footer-contacts-list">
+                        <ul>
+                            <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+                            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/Babin-zub-vili-Bilyana-949065918483697/"><i class="fab fa-facebook-square"></i></a></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="footer-map">
+                    <header>
+                        <h4>Адрес</h4>
+                    </header>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.667800644045!2d22.581831618125236!3d43.40487237955714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4754e56d9ded4a3d%3A0xfc135a20eaf00268!2z0JLQuNC70LAg0JHQuNC70Y_QvdCw!5e0!3m2!1sbg!2sbg!4v1573934623924!5m2!1sbg!2sbg" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </section>
             </section>
-            <section class="footer-contacts">
-                <header>
-                    <h4>Контакти</h4>
-                </header>
-                <div class="footer-contacts-list">
-                    <ul>
-                        <li><a href="tel:+359 889 203 700;">+359 889 203 700</a></li>
-                        <li><a href="mailto:kalininova@abv.bg">kalininova@abv.bg</a></li>
-                    </ul>
-                </div>
-            </section>
+
+            <div class="copiryght">
+                <p>COPYRIGHT &copy; 2019 VILLA BILYANA. ALL RIGHTS RESERVED.</p>
+            </div>
+
         </footer>
     </div>
 </body>
