@@ -41,6 +41,29 @@
     color: #5e5959;
 }
 
+.site-nav li a::before {
+    display: inline-block;
+    padding-right: 0.5em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.icon- a::before {
+    content: '\f015';
+}
+
+.icon-prices a::before {
+    content: '\f153';
+}
+
+.icon-fun a::before {
+    content: '\f7c9';
+}
+
+.icon-contacts a::before {
+    content: '\f277';
+}
+
 .site-nav li:nth-child(1) {
     border: 2px solid rgb(7, 242, 207);
     background: rgba(7, 242, 207, 0.3);
