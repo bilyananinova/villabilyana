@@ -5,6 +5,8 @@
     color: #5e5959;
 }
 
+/* Header part  */
+
 .site-header {
     display: flex;
     align-items: center;
@@ -22,6 +24,8 @@
     text-shadow: 2px 2px 2px #000000;
 }
 
+/* Main part */
+
 .site-main {
     width: 60em;
     margin: 0 auto;
@@ -31,10 +35,23 @@
     padding: 1em 1em 1em 0;
 }
 
-.site-main li {
-    list-style-type: square;
+.site-main li::before {
+    display: inline-block;
+    padding-right: 0.8em;
+    color: #5e5959;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.8em;
+    content: '\f005';
     margin-left: 1.5em;
 }    
+
+.pagefun li {
+    list-style: none;
+    margin-left: 0;
+}
+
+/* Footer part */
 
 .site-footer {
     margin: 2em auto 0;

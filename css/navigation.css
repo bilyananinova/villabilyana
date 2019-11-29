@@ -1,3 +1,4 @@
+
 /* All css about navigation */
 
 .site-nav  {
@@ -23,44 +24,45 @@
 
 @keyframes slide {
     0% {
-        transform: translateX(50vw);
+        /* transform: translateX(50vw); */
         opacity: 0;
     }
 
-    50% {
-        /* transform: translateY(15vh); */
-    }
-
     100% {
-        transform: translateX(0);
+        /* transform: translateX(0); */
         opacity: 1;
     }
 }
 
-.site-nav ul a {
+.site-nav li:hover,
+.site-nav li:focus {
+    box-shadow: 0 5px 15px rgba(108, 99, 114, 0.5);
+}
+
+.site-nav a {
     color: #5e5959;
 }
 
-.site-nav li a::before {
+.site-nav a::before {
     display: inline-block;
     padding-right: 0.5em;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
 
-.icon- a::before {
+.icon a::before {
     content: '\f015';
 }
 
-.icon-prices a::before {
+.iconprices a::before {
     content: '\f153';
 }
 
-.icon-fun a::before {
+.iconfun a::before {
     content: '\f7c9';
 }
 
-.icon-contacts a::before {
+.iconcontacts a::before {
     content: '\f277';
 }
 
