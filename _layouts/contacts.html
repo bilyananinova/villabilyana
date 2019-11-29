@@ -20,26 +20,46 @@
                {% include navigation.html location="header" %}
         
         </header>
-            <div class="main">
-                <main class="site-main">
-                    <h2>{{ page.title }}</h2>
-                
-                    {{ content }}
-                </main>    
+            
+        <main class="site-main">
+            <h2>{{ page.title }}</h2>
+        
+            <div class="container-contact">
 
-                <aside class="site-sidebar">
-                    <header class="sidebar-header">
-                        <h4>Пътеписи</h4>
-                    </header>
-                    <nav class="nav-sidebar">
-                        <ul class="links">
-                            <li><a href="https://camping.bg/%D1%81%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B1%D0%B8%D0%BD-%D0%B7%D1%83%D0%B1-%D1%81-%D0%BA%D0%B5%D0%BC%D0%BF%D0%B5%D1%80-guidebook54-out.html">Ски на Бабин зуб с кемпер</a></li>
-                            <li><a href="http://myhappypond.com/2016/02/%D1%81%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B1%D0%B8%D0%BD-%D0%B7%D1%83%D0%B1/">Ски на Бабин Зуб</a></li>
-                            <li><a href="http://marshruti.com/%D0%B1%D0%B0%D0%BB%D0%BA%D0%B0%D0%BD%D0%B8/ski-serbia-stara-planina/">На ски в Сърбия 1 – Бабин зуб</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>    
+                <section class="contacts-map"> 
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.667800644045!2d22.581831618125236!3d43.40487237955714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4754e56d9ded4a3d%3A0xfc135a20eaf00268!2z0JLQuNC70LAg0JHQuNC70Y_QvdCw!5e0!3m2!1sbg!2sbg!4v1573934623924!5m2!1sbg!2sbg" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                </section>
+
+                <section class="form">
+                    <legend>Форма за контакти</legend>  
+                    <p class="field-name">
+                        <label for="name"><span>Име</span></label>
+                        <input type="text" name="name" placeholder="Биляна Нинова" required>
+                    </p>
+                    <p class="field-email">
+                        <label for="email"><span>Email</span></label>
+                        <input type="email" name="email" id="email" placeholder="bilyanamail@example.com" required>
+                    </p>
+                    <p class="field-phone">
+                        <label for="phone"><span>Телефон</span></label>
+                        <input type="number" name="phone" placeholder="088 888 888" required>
+                    </p>
+                    <p>
+                        <textarea rows="8" cols="50" name="message" id="message"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send It!">
+                    </p>
+                </section>
+
+            </div>
+
+            {{ content }}
+
+        </main>    
+        
         <footer class="site-footer">
 
             <section class="contacts-list"> 

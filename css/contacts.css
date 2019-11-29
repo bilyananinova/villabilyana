@@ -1,0 +1,25 @@
+.container-contact {
+    display: flex;
+}
+
+.contacts-map {
+    display: inline;
+    flex: 0 0 60%;
+    width: 25em;
+}
+
+.form {
+    flex: 0 0 40%;
+    width: 25em;
+}
+
+legend {
+    padding-bottom: 0.5em;
+}
+
+.field-name,
+.field-email,
+.field-phone {
+    display: flex;
+    flex-direction: column;
+}
