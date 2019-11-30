@@ -1,0 +1,80 @@
+.container-contact {
+    display: flex;
+    max-width: 60em;
+}
+
+.contacts-map {
+    margin: 0 2em;
+    display: inline-block;
+}
+
+.form {
+    display: inline-block;
+    background: rgba(255, 186, 155, 0.5);
+    box-shadow: 3px 2px 21px 7px rgba(108,99,114,0.5);
+    border-radius: 0.3em;
+    padding: 0 2em;
+}
+
+.form legend {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.form label,
+.form legend {
+    font-family: 'Pacifico', cursive;
+}
+
+.field-name,
+.field-email,
+.field-phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.messege textarea {
+    padding: 0.3em;
+    border: 1px solid #5e5959;
+    border-radius: 0.3em;
+}
+
+.form input[type="text"]:hover,
+.form input[type="text"]:focus,
+.form input[type="email"]:hover,
+.form input[type="email"]:focus,
+.messege textarea:hover,
+.messege textarea:focus {
+    box-shadow: 0 5px 15px rgba(108, 99, 114, 0.5);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input[type=submit] {
+    padding: 0.5em 1em;
+    background: rgba(255,155, 110, 0.7);
+    border-radius: 0.5em;
+    border: none;
+    font-family: 'Pacifico', cursive;
+    color: #5e5959;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.form input[type=submit]:hover,
+.form input[type=submit]:focus {
+    box-shadow: 0 5px 15px rgba(108, 99, 114, 0.8);
+    background: rgba(255, 155, 110, 1);
+    color: #ffffff;
+}
+
+.pagecontacts .contacts {
+    padding-left: 2em;
+}
