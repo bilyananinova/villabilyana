@@ -2,11 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    padding: 0 6em;
 }
 
 .site-main {
-    flex-shrink: 1;
-    flex-basis: 50em;
+    flex: 0 0 65%;
 }
 
 .site-sidebar {
