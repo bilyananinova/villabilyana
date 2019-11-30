@@ -3,7 +3,7 @@ email: bilyanamail@example.com
 phone: +359 888 888 888
 description: Почивка в Сърбия
 destination: docs
-baseurl: "/villabilyana" 
+baseurl: /villabilyana 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 external_url: "https://www.facebook.com/Babin-zub-vili-Bilyana-949065918483697/"
 # twitter_username: jekyllrb
