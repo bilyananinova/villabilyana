@@ -5,13 +5,11 @@
     color: #5e5959;
 }
 
-/* Header part  */
-
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow:20px 20px 10px grey; 
+    box-shadow: 20px 20px 10px grey; 
     background: #ffffff;
 }
 
@@ -24,8 +22,6 @@
     text-shadow: 2px 2px 2px #000000;
 }
 
-/* Main part */
-
 .site-main {
     width: 65em;
     margin: 0 auto;
@@ -34,19 +30,6 @@
 .site-main h2 {
     padding: 1em 1em 1em 0;
 }
-
-.pageprices .site-main li::before {
-    display: inline-block;
-    padding-right: 0.8em;
-    color: #5e5959;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 0.8em;
-    content: '\f005';
-    margin-left: 1.5em;
-}    
-
-/* Footer part */
 
 .site-footer {
     margin: 2em auto 0;
@@ -62,6 +45,12 @@
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+}
+
+.contacts li {
+    padding: 0.5em 0;
+    list-style: none;
+    margin: 0;
 }
 
 .facebook {

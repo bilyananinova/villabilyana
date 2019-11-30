@@ -1,3 +1,13 @@
+/* Css about contacts page */
+
+.pagecontacts .site {
+    background-image: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
+}
+
+.pagecontacts .site-title a {
+    color: #ff9b6e;
+}
+
 .container-contact {
     display: flex;
     max-width: 60em;
@@ -77,4 +87,8 @@
 
 .pagecontacts .contacts {
     padding-left: 2em;
+}
+
+.pagecontacts .site-footer {
+    background: #ff9b6e;
 }

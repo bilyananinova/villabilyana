@@ -1,7 +1,9 @@
 @import url('reset.css');
-@import url('thypography.css');
+@import url('typography.css');
 @import url('layout.css');
 @import url('asidelayout.css');
 @import url('navigation.css');
-@import url('pages.css');
+@import url('index.css');
+@import url('fun.css');
+@import url('prices.css');
 @import url('contacts.css');
