@@ -35,7 +35,7 @@
     padding: 1em 1em 1em 0;
 }
 
-.site-main li::before {
+.pageprices .site-main li::before {
     display: inline-block;
     padding-right: 0.8em;
     color: #5e5959;
@@ -45,11 +45,6 @@
     content: '\f005';
     margin-left: 1.5em;
 }    
-
-.pagefun li {
-    list-style: none;
-    margin-left: 0;
-}
 
 /* Footer part */
 
