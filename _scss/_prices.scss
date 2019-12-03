@@ -23,6 +23,8 @@
 
 .pageprpices-pics {
     margin: 0.8em;
+    padding: 0.5em;
+    background: #ffffff;
     position: relative;
     width: 15em;
     overflow: hidden;
@@ -44,7 +46,6 @@
 .pageprpices-pics img {
     display: block;
     padding: 0.5em;
-    
     width: 50%;
     height: auto;
     position: absolute;

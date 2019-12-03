@@ -5,11 +5,15 @@
     color: #5e5959;
 }
 
+.site a {
+    color: #535050;
+}
+
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 20px 20px 10px grey; 
+    box-shadow: 0px 20px 10px grey; 
     background: #ffffff;
 }
 
@@ -23,7 +27,7 @@
 }
 
 .site-main {
-    width: 65em;
+    width: 60em;
     margin: 0 auto;
 }
 
@@ -39,6 +43,7 @@
 
 .site-footer a {
     font-size: 0.8em;
+    text-shadow: 1px 1px 1px #ffffff;
 }
 
 .contacts-list {
