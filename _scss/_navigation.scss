@@ -20,17 +20,24 @@
     animation-timing-function: ease-in-out;
     animation-delay: 0.3;
     animation-iteration-count: 1;
-    transition: transform 1s;
 }
 
 @keyframes slide {
     0% {
-        // transform: translateX(50vw);
+        z-index: -5;
+        transform: translateY(0);
         opacity: 0;
     }
 
+    50% {
+        z-index: 1;
+        transform: translateY(15vh);
+        opacity: 0.5;
+    }
+    
     100% {
-        // transform: translateX(0);
+        z-index: 2;
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -38,7 +45,6 @@
 .site-nav .current_page,
 .site-nav li:hover,
 .site-nav li:focus {
-    transform: scale(1.1);
     box-shadow: 0px 5px 5px 0px rgba(108, 99, 114, 0.3);
 }
 
