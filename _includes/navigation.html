@@ -13,10 +13,11 @@
 
         {% assign navigation_pages = site.pages | sort:"order" %}
             
-            {% for page in navigation_pages %}
-                {% if page.title %}                
-                <li class="icon{{ page.permalink | slugify }}">
-                    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+            {% for current_page in navigation_pages %}
+                {% if current_page.title %}   
+                
+                <li class="icon{{ current_page.permalink | slugify }}{% if current_page.url == page.url %} current_page {% endif %}">
+                    <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
                 </li>
                 {% endif %}
             {% endfor %}

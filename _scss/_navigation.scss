@@ -20,23 +20,26 @@
     animation-timing-function: ease-in-out;
     animation-delay: 0.3;
     animation-iteration-count: 1;
+    transition: transform 1s;
 }
 
 @keyframes slide {
     0% {
-        /* transform: translateX(50vw); */
+        // transform: translateX(50vw);
         opacity: 0;
     }
 
     100% {
-        /* transform: translateX(0); */
+        // transform: translateX(0);
         opacity: 1;
     }
 }
 
+.site-nav .current_page,
 .site-nav li:hover,
 .site-nav li:focus {
-    box-shadow: 0 5px 15px rgba(108, 99, 114, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 5px 0px rgba(108, 99, 114, 0.3);
 }
 
 .site-nav a {
