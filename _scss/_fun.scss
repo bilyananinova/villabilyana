@@ -1,14 +1,16 @@
-.pagefun .site {
-    background-image: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffe0a5, #f5f178);
-}
+.pagefun {
+    .site {
+        background-image: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffe0a5, #f5f178);
+    }
 
-.pagefun .site-title a {
-    color: #fdf857;
-}
+    .site-title a {
+        color: #fdf857;
+    }
 
-.pagefun .site-footer {
-    background: #fffa6e;
-}
+    .site-footer {
+        background: #fffa6e;
+    }
+}    
 
 .pagefun-pics {
     margin: 0.8em;
@@ -21,26 +23,26 @@
     border-radius: 0.3em;
     border: 3px solid #5e5959;
     float: right;
-}
 
-.pagefun-pics::after {
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+    &::after {
+        display: block;
+        content: '';
+        padding-top: 56.25%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 
-.pagefun-pics img {
-    display: block;
-    padding: 0.5em;
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &img {
+        display: block;
+        padding: 0.5em;
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

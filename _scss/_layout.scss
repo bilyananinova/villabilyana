@@ -3,69 +3,73 @@
 .site {
     max-width: 100%;
     color: #5e5959;
-}
 
-.site a {
-    color: #5e5959;
-}
+    a {
+        color: #5e5959;
+    }
 
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0px 20px 10px #808080; 
-    background: #ffffff;
-}
+    .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 20px 10px #808080;
+        background: #ffffff;
+    }
+    
+    .site-title {
+        h1 {
+        list-style: none;
+        }
+    
+        a {
+        font-weight: 900;
+        text-shadow: 2px 2px 2px #000000;
+        }
+    }
 
-.site-title h1 {
-    list-style: none;
-}
+    .site-main {
+        width: 60em;
+        margin: 0 auto;
+    
+        h2 {
+        padding: 1em 1em 1em 0;
+        }
+        
+    }
 
-.site-title a {
-    font-weight: 900;
-    text-shadow: 2px 2px 2px #000000;
-}
+    .site-footer {
+        margin: 2em auto 0;
+        padding-top: 1em;
+        width: 70em;
+    
+        a {
+        font-size: 0.8em;
+        text-shadow: 1px 1px 1px #ffffff;
+        }
+    }
 
-.site-main {
-    width: 60em;
-    margin: 0 auto;
-}
+    .contacts-list {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
 
-.site-main h2 {
-    padding: 1em 1em 1em 0;
-}
+    .contacts li {
+        padding: 0.5em 0;
+        list-style: none;
+        margin: 0;
+        list-style: none;
+    }
 
-.site-footer {
-    margin: 2em auto 0;
-    padding-top: 1em;
-    width: 70em;
-}
+    .fab {
+        font-size: 2em;
+        color: #1616aa;
+    }
 
-.site-footer a {
-    font-size: 0.8em;
-    text-shadow: 1px 1px 1px #ffffff;
-}
-
-.contacts-list {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-}
-
-.contacts li {
-    padding: 0.5em 0;
-    list-style: none;
-    margin: 0;
-}
-
-.fab {
-    font-size: 2em;
-    color: #1616aa;
-}
-
-.copiryght {
-    text-align: center;
-    font-size: 0.6em;
-    background: #ffffff;
-    padding-top: 0.8em;
+    .copiryght {
+        text-align: center;
+        font-size: 0.6em;
+        background: #ffffff;
+        padding-top: 0.8em;
+    }
 }

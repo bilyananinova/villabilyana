@@ -1,11 +1,14 @@
 /* Css about contacts page */
 
-.pagecontacts .site {
-    background-image: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
-}
+.pagecontacts {
 
-.pagecontacts .site-title a {
-    color: #ff9b6e;
+    .site {
+        background-image: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
+    }
+
+    .site-title a {
+        color: #ff9b6e;
+    }
 }
 
 .container-contact {
@@ -24,17 +27,16 @@
     box-shadow: 3px 2px 21px 7px rgba(108,99,114,0.5);
     border-radius: 0.3em;
     padding: 0 2em;
-}
 
-.form legend {
-    text-align: center;
-    padding: 0.5em;
-    font-size: 1.2em;
-}
-
-.form label,
-.form legend {
-    font-family: 'Pacifico', cursive;
+    legend {
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1.2em;
+    }
+    label,
+    legend {
+        font-family: 'Pacifico', cursive;
+    }
 }
 
 .field-name,
@@ -76,19 +78,22 @@
     color: #5e5959;
     line-height: 1;
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 5px 15px rgba(108, 99, 114, 0.8);
+        background: rgba(255, 155, 110, 1);
+        color: #ffffff;
+    }
 }
 
-.form input[type=submit]:hover,
-.form input[type=submit]:focus {
-    box-shadow: 0 5px 15px rgba(108, 99, 114, 0.8);
-    background: rgba(255, 155, 110, 1);
-    color: #ffffff;
-}
-
-.pagecontacts .contacts {
-    padding-left: 2em;
-}
-
-.pagecontacts .site-footer {
-    background: #ff9b6e;
+.pagecontacts {
+    .contacts {
+      padding-left: 2em;
+      list-style: none;
+    }
+  
+    .site-footer {
+      background: #ff9b6e;
+    }
 }
