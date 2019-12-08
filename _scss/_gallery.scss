@@ -17,6 +17,14 @@
     gap: 0.8em;
     grid-auto-flow: dense;
 
+    @include bp(phone) {
+        display: block;
+    }
+
+    @include bp(mobile) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .portrait,
     .landscape {
         list-style: none;
@@ -47,12 +55,12 @@
 
     &::before {
         padding-top: 56.25%;
-        }
+    }
 }
 
 .portrait img,
 .landscape img {
-        display: block;
+    display: block;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -62,6 +70,14 @@
 .portrait img {
     width: auto;
     height: 100%; 
+
+    @include bp(phone) {
+        padding-top: 4em;
+    }
+
+    @include bp(mobile) {
+        padding-top: 2em;
+    }
 }
 
 .landscape img{

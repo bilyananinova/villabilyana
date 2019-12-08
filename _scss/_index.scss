@@ -1,15 +1,15 @@
 .page {
-    .site {
+  .site {
     background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2, #cbffc2);
-    }    
+  }    
 
-    .site-title a {
-        color: #73ffb9;
-    }
+  .site-title a {
+    color: #73ffb9;
+  }  
 
-    .site-footer {
-        background: #90fcc6;
-    }
+  .site-footer {
+    background: #90fcc6;
+  }
 }
 
 .baner {
@@ -32,7 +32,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    max-width: 100%;
     height: auto;
+
   }
 }

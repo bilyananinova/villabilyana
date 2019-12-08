@@ -9,16 +9,40 @@
     .site-title a {
         color: #ff9b6e;
     }
+
+    .site-footer {
+        background: #ff9b6e;
+    }
 }
 
 .container-contact {
     display: flex;
     max-width: 60em;
+
+    @include bp(mobile) {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 1em;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
 }
 
 .contacts-map {
     margin: 0 2em;
     display: inline-block;
+
+    @include bp(mobile) {
+        padding-bottom: 1em;
+        width: 900px;
+        justify-content: center;
+    }
+
+    @include bp(mobile) {
+        width: 500px;
+        margin-left: 0;
+    }
 }
 
 .form {
@@ -87,13 +111,14 @@
     }
 }
 
-.pagecontacts {
-    .contacts {
-      padding-left: 2em;
-      list-style: none;
+.contacts {
+    padding-left: 2em;
+    list-style: none;
+    display: flex;
+
+    @include bp(mobile) {
+        padding-top: 2em;
+        justify-content: center;
     }
-  
-    .site-footer {
-      background: #ff9b6e;
-    }
+
 }

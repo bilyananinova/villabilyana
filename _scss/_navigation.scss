@@ -125,6 +125,7 @@
     pointer-events: none;
 
     &:checked + .site .site-header .site-nav {
+
         @include bp(mobile) {
             display: block;
         }
