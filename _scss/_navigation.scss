@@ -3,8 +3,15 @@
 .site-nav  {
     display: block;
 
+    @include bp(mobile) {
+        display: none;
+    }
+
     ul {
-        display: flex;
+
+        @include bp(desktop) {
+            display: flex;
+        }
 
         li {
             line-height: 0;
@@ -17,6 +24,10 @@
             animation-timing-function: ease-in-out;
             animation-delay: 0.3;
             animation-iteration-count: 1;
+
+            @include bp(mobile) {
+                animation: none;
+            }
 
             &:nth-child(1) {
                 border: 2px solid rgb(7, 242, 207);
@@ -105,5 +116,24 @@
 
     .iconcontacts a::before {
         content: '\f277';
+    }
+}
+
+.nav-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+    &:checked + .site .site-header .site-nav {
+        @include bp(mobile) {
+            display: block;
+        }
+    }
+    
+    &-label {        
+        @include bp(desktop) {
+            display: none;
+        }
+
     }
 }
