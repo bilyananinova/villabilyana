@@ -44,6 +44,12 @@
 
 .portrait {
     grid-row: span 1;
+    grid-column: span 2;
+
+    @include bp(mobile) {
+        grid-column: span 1;
+    }
+
 
     &::before {
         padding-top: 177.77%;
