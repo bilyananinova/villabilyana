@@ -5,48 +5,48 @@
 
     ul {
         display: flex;
-    }    
 
-    li {
-        line-height: 0;
-        display: block;
-        margin: 0 0.5em;
-        list-style: none;
-        padding: 0.7em 0.5em;
-        border-radius: 0.5em;
-        animation-name: slide;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.3;
-        animation-iteration-count: 1;
+        li {
+            line-height: 0;
+            display: block;
+            margin: 0 0.5em;
+            list-style: none;
+            padding: 0.7em 0.5em;
+            border-radius: 0.5em;
+            animation-name: slide;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.3;
+            animation-iteration-count: 1;
 
-        &:nth-child(1) {
-            border: 2px solid rgb(7, 242, 207);
-            background: rgba(7, 242, 207, 0.3);
-            animation-duration: 1s;
-        }
-    
-        &:nth-child(2) {
-            border: 2px solid rgb(214, 135, 245);
-            background: rgba(214, 135, 245, 0.3);
-            animation-duration: 2s;
-        }
-    
-        &:nth-child(3) {
-            border: 2px solid rgb(245, 241, 120);
-            background: rgba(255, 253, 149, 0.8);
-            animation-duration: 3s;
-        }
-    
-        &:nth-child(4) {
-            border: 2px solid rgb(160, 241, 122);
-            background: rgba(160, 241, 122, 0.3);
-            animation-duration: 4s;
-        }
-    
-        &:nth-child(5) {
-            border: 2px solid rgb(255, 176, 140);
-            background: rgba(255, 176, 140, 0.3);
-            animation-duration: 5s;
+            &:nth-child(1) {
+                border: 2px solid rgb(7, 242, 207);
+                background: rgba(7, 242, 207, 0.3);
+                animation-duration: 1s;
+            }
+        
+            &:nth-child(2) {
+                border: 2px solid rgb(214, 135, 245);
+                background: rgba(214, 135, 245, 0.3);
+                animation-duration: 2s;
+            }
+        
+            &:nth-child(3) {
+                border: 2px solid rgb(245, 241, 120);
+                background: rgba(255, 253, 149, 0.8);
+                animation-duration: 3s;
+            }
+        
+            &:nth-child(4) {
+                border: 2px solid rgb(160, 241, 122);
+                background: rgba(160, 241, 122, 0.3);
+                animation-duration: 4s;
+            }
+        
+            &:nth-child(5) {
+                border: 2px solid rgb(255, 176, 140);
+                background: rgba(255, 176, 140, 0.3);
+                animation-duration: 5s;
+            }
         }  
     }    
 
@@ -106,4 +106,4 @@
     .iconcontacts a::before {
         content: '\f277';
     }
-}    
+}

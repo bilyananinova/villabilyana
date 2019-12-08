@@ -8,6 +8,9 @@
     <title>{{ site.title }}</title>
 </head>
 <body class="page{{ page.permalink | slugify }}">
+    
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
     <div class="site">
 
         <header class="site-header">
@@ -16,7 +19,7 @@
                 <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
                 <p>{{ site.description}}</p>
             </div>
-        
+
                {% include navigation.html location="header" %}
         
         </header>
