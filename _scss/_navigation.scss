@@ -1,110 +1,109 @@
-
 /* All css about navigation */
 
 .site-nav  {
     display: block;
-}
 
-.site-nav ul {
-    display: flex;
-}    
+    ul {
+        display: flex;
+    }    
 
-.site-nav li {
-    line-height: 0;
-    display: block;
-    margin: 0 0.5em;
-    list-style: none;
-    padding: 0.7em 0.5em;
-    border-radius: 0.5em;
-    animation-name: slide;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.3;
-    animation-iteration-count: 1;
-}
+    li {
+        line-height: 0;
+        display: block;
+        margin: 0 0.5em;
+        list-style: none;
+        padding: 0.7em 0.5em;
+        border-radius: 0.5em;
+        animation-name: slide;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.3;
+        animation-iteration-count: 1;
 
-@keyframes slide {
-    0% {
-        z-index: -5;
-        transform: translateY(0);
-        opacity: 0;
-    }
-
-    50% {
-        z-index: 1;
-        transform: translateY(15vh);
-        opacity: 0.5;
-    }
+        &:nth-child(1) {
+            border: 2px solid rgb(7, 242, 207);
+            background: rgba(7, 242, 207, 0.3);
+            animation-duration: 1s;
+        }
     
-    100% {
-        z-index: 2;
-        transform: translateY(0);
-        opacity: 1;
+        &:nth-child(2) {
+            border: 2px solid rgb(214, 135, 245);
+            background: rgba(214, 135, 245, 0.3);
+            animation-duration: 2s;
+        }
+    
+        &:nth-child(3) {
+            border: 2px solid rgb(245, 241, 120);
+            background: rgba(255, 253, 149, 0.8);
+            animation-duration: 3s;
+        }
+    
+        &:nth-child(4) {
+            border: 2px solid rgb(160, 241, 122);
+            background: rgba(160, 241, 122, 0.3);
+            animation-duration: 4s;
+        }
+    
+        &:nth-child(5) {
+            border: 2px solid rgb(255, 176, 140);
+            background: rgba(255, 176, 140, 0.3);
+            animation-duration: 5s;
+        }  
+    }    
+
+    @keyframes slide {
+        0% {
+            z-index: -5;
+            transform: translateY(0);
+            opacity: 0;
+        }
+
+        50% {
+            z-index: 1;
+            transform: translateY(15vh);
+            opacity: 0.5;
+        }
+        
+        100% {
+            z-index: 2;
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-}
 
-.site-nav .current_page,
-.site-nav li:hover,
-.site-nav li:focus {
-    box-shadow: 0px 5px 5px 0px rgba(108, 99, 114, 0.3);
-}
+    .current_page,
+    li:hover,
+    li:focus {
+        box-shadow: 0px 5px 5px 0px rgba(108, 99, 114, 0.3);
+    }
 
-.site-nav a {
-    color: #5e5959;
-}
+    a {
+        color: #5e5959;
 
-.site-nav a::before {
-    display: inline-block;
-    padding-right: 0.5em;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
+        &::before {
+            display: inline-block;
+            padding-right: 0.5em;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    }
 
-.icon a::before {
-    content: '\f015';
-}
+    .icon a::before {
+        content: '\f015';
+    }
 
-.iconprices a::before {
-    content: '\f153';
-}
+    .iconprices a::before {
+        content: '\f153';
+    }
 
-.iconfun a::before {
-    content: '\f7c9';
-}
+    .iconfun a::before {
+        content: '\f7c9';
+    }
 
-.icongallery a::before {
-    content: '\f083';
-}
+    .icongallery a::before {
+        content: '\f083';
+    }
 
-.iconcontacts a::before {
-    content: '\f277';
-}
-
-.site-nav li:nth-child(1) {
-    border: 2px solid rgb(7, 242, 207);
-    background: rgba(7, 242, 207, 0.3);
-    animation-duration: 1s;
-}
-
-.site-nav li:nth-child(2) {
-    border: 2px solid rgb(214, 135, 245);
-    background: rgba(214, 135, 245, 0.3);
-    animation-duration: 2s;
-}
-
-.site-nav li:nth-child(3) {
-    border: 2px solid rgb(245, 241, 120);
-    background: rgba(255, 253, 149, 0.8);
-    animation-duration: 3s;
-}
-
-.site-nav li:nth-child(4) {
-    border: 2px solid rgb(160, 241, 122);
-    background: rgba(160, 241, 122, 0.3);
-    animation-duration: 4s;
-}
-
-.site-nav li:nth-child(5) {
-    border: 2px solid rgb(255, 176, 140);
-    background: rgba(255, 176, 140, 0.3);
-    animation-duration: 5s;
+    .iconcontacts a::before {
+        content: '\f277';
+    }
 }    

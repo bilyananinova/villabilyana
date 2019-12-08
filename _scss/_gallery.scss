@@ -1,13 +1,14 @@
-.pagegallery .site {
+.pagegallery 
+    .site {
     background-image: linear-gradient(to bottom, #e2f6fa, #73f87e);
-}
 
-.pagegallery .site-title a {
-    color: #59EF65;
-}
+    .site-title a {
+        color: #59EF65;
+    }
 
-.pagegallery .site-footer {
-    background: #59EF65;
+    .site-footer {
+        background: #59EF65;
+    }
 }
 
 .gallery {
@@ -17,41 +18,42 @@
     grid-auto-flow: dense;
 }    
 
-.gallery .portrait,
-.gallery .landscape {
-    list-style: none;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.6em;
+    .portrait,
+    .landscape {
+        list-style: none;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.6em;
+    }
+
+    .portrait::before,
+    .landscape::before {
+        display: block;
+        content: '';
+        padding-top: 100%;
+    }
 }
 
-.gallery .portrait::before,
-.gallery .landscape::before {
-    display: block;
-    content: '';
-    padding-top: 100%;
-}
-
-.gallery .portrait {
+.portrait {
     grid-row: span 1;
+
+    &::before {
+        padding-top: 177.77%;
+    }
 }
 
-.gallery .portrait::before {
-    padding-top: 177.77%;
-}
-
-.gallery .landscape {
+.landscape {
     grid-column: span 2;
-}
 
-.gallery .landscape::before {
-    padding-top: 56.25%;
+    &::before {
+        padding-top: 56.25%;
+        }
 }
 
 .portrait img,
 .landscape img {
-    display: block;
+        display: block;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -68,25 +70,26 @@
     height: auto;
 }
 
-.gallery .landscape a,
-.gallery .portrait a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 
-.gallery .landscape a::before,
-.gallery .portrait a::before {
+.landscape a,
+.portrait a {
     display: block;
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
+    &.landscape a::before,
+    &.portrait a::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .portrait,
@@ -94,11 +97,13 @@
     opacity: 0.7;
     z-index: 5;
     transition: transform 2s, opacity 0.5s, z-index 1s;
+
+    &:hover,
+    &:hover {
+        z-index: 20;
+        transform: scale(1.5);
+        opacity: 1;
+    }
 }
 
-.portrait:hover,
-.landscape:hover {
-    z-index: 20;
-    transform: scale(1.5);
-    opacity: 1;
-}
+    
