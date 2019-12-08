@@ -1,5 +1,5 @@
 .pagegallery 
-    .site {
+.site {
     background-image: linear-gradient(to bottom, #e2f6fa, #73f87e);
 
     .site-title a {
@@ -16,7 +16,6 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 0.8em;
     grid-auto-flow: dense;
-}    
 
     .portrait,
     .landscape {
@@ -70,7 +69,6 @@
     height: auto;
 }
 
-
 .landscape a,
 .portrait a {
     display: block;
@@ -104,6 +102,4 @@
         transform: scale(1.5);
         opacity: 1;
     }
-}
-
-    
+}    
