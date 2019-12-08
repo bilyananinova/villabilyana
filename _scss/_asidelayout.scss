@@ -5,23 +5,44 @@
     flex-wrap: wrap;
     align-items: baseline;
     padding: 0 6em;
-} 
 
-.site-main {
-    flex: 0 0 65%;
-    
+    @include bp(phone) {
+        padding: 0.5em;
+    }
+
+    @include bp(tablet) {
+        justify-content: center;
+    }
+
     @include bp(mobile) {
         width: 100%;
         flex: 0 0 100%;
+        margin: 0;
+        padding: 0;
     }
+
+    @include bp(desktop) {
+        padding: 0;
+        margin: 0;
+    }
+} 
+
+.site-main {
+    flex: 0 0 60%;
 }
 
 .site-sidebar {
-    padding: 0 2em;
+    padding: 0 5em 0 2em;
     border-left: 2px solid #5e5959;
 
     @include bp(mobile) {
-        border: none;    
+        border: none;  
+        padding: 1.5em;  
+    }
+
+    @include bp(desktop) {
+        padding: 1.5em;
+        margin: 0;  
     }
 
     & li a::before {

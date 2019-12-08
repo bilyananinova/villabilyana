@@ -59,6 +59,10 @@
 
 .bedroom {
     float: left;
+
+    @include bp(phone) {
+        margin: 2.5em;
+    }
 }
 
 .livingroom {

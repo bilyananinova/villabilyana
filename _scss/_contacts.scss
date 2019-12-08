@@ -30,19 +30,29 @@
 }
 
 .contacts-map {
-    margin: 0 2em;
+    margin-right: 2em;
     display: inline-block;
 
-    @include bp(mobile) {
-        padding-bottom: 1em;
-        width: 900px;
-        justify-content: center;
+    @include bp(phone) {
+
+    }
+
+    @include bp(tablet) {
+
     }
 
     @include bp(mobile) {
-        width: 500px;
-        margin-left: 0;
+
     }
+
+    @include bp(desktop) {
+
+    }
+
+    @include bp(large) {
+
+    }
+
 }
 
 .form {
@@ -52,11 +62,20 @@
     border-radius: 0.3em;
     padding: 0 2em;
 
+    @include bp(phone) {
+        margin-left: 0;
+    }
+
+    @include bp(tablet) {
+
+    }
+
     legend {
         text-align: center;
         padding: 0.5em;
         font-size: 1.2em;
     }
+
     label,
     legend {
         font-family: 'Pacifico', cursive;
@@ -115,6 +134,10 @@
     padding-left: 2em;
     list-style: none;
     display: flex;
+
+    @include bp(phone) {
+        text-align: center;
+    }
 
     @include bp(mobile) {
         padding-top: 2em;

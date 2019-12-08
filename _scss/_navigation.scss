@@ -90,6 +90,10 @@
     a {
         color: #5e5959;
 
+        @include bp(desktop) {
+            font-size: 16px;
+        }
+
         &::before {
             display: inline-block;
             padding-right: 0.5em;
