@@ -30,29 +30,13 @@
 }
 
 .contacts-map {
-    margin-right: 2em;
+    margin-right: 4em;
     display: inline-block;
 
-    @include bp(phone) {
-
-    }
-
-    @include bp(tablet) {
-
-    }
-
     @include bp(mobile) {
-
+        margin: 0;
+        padding-bottom: 2em;
     }
-
-    @include bp(desktop) {
-
-    }
-
-    @include bp(large) {
-
-    }
-
 }
 
 .form {
@@ -64,10 +48,6 @@
 
     @include bp(phone) {
         margin-left: 0;
-    }
-
-    @include bp(tablet) {
-
     }
 
     legend {

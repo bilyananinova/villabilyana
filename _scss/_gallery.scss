@@ -47,10 +47,17 @@
     grid-row: span 1;
     grid-column: span 2;
 
-    @include bp(mobile) {
+    @include bp(phone) {
         grid-column: span 1;
     }
 
+    @include bp(tablet) {
+        grid-column: span 1;
+    }
+
+    @include bp(mobile) {
+        grid-column: span 1;
+    }
 
     &::before {
         padding-top: 177.77%;
@@ -59,6 +66,10 @@
 
 .landscape {
     grid-column: span 2;
+
+    @include bp(mobile) {
+        grid-column: span 1;
+    }
 
     &::before {
         padding-top: 56.25%;
@@ -124,5 +135,21 @@
         z-index: 20;
         transform: scale(1.5);
         opacity: 1;
+
+        @include bp(phone) {
+            transform: none;
+        }
+
+        @include bp(tablet) {
+            transform: none;
+        }
+
+        @include bp(mobile) {
+            transform: none;
+        }
+
+        @include bp(large) {
+            transform: scale( 1.8 );
+        }
     }
 }    

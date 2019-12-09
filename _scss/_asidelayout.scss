@@ -10,10 +10,6 @@
         padding: 0.5em;
     }
 
-    @include bp(tablet) {
-        justify-content: center;
-    }
-
     @include bp(mobile) {
         width: 100%;
         flex: 0 0 100%;
@@ -25,15 +21,30 @@
         padding: 0;
         margin: 0;
     }
+
+    @include bp(large) {
+        padding: 0 1em 0 5em;
+        margin: 0;
+        justify-content: center;
+    }
 } 
 
 .site-main {
     flex: 0 0 60%;
+
+    @include bp(tablet) {
+        margin: 0;
+        flex: 0 0 90%;
+    }
 }
 
 .site-sidebar {
     padding: 0 5em 0 2em;
     border-left: 2px solid #5e5959;
+
+    @include bp(tablet) {
+        margin-left: 2.5em;
+    }
 
     @include bp(mobile) {
         border: none;  
@@ -43,6 +54,10 @@
     @include bp(desktop) {
         padding: 1.5em;
         margin: 0;  
+    }
+
+    @include bp(large) {
+        margin-left: 3em;
     }
 
     & li a::before {
