@@ -81,6 +81,7 @@
     padding: 0.3em;
     border: 1px solid #5e5959;
     border-radius: 0.3em;
+    resize: none;
 
     @include bp(phone) {
         width: 350px;
