@@ -19,9 +19,13 @@
     display: flex;
     max-width: 60em;
 
+    @include bp(phone) {
+        margin: 0 auto;
+    }
+
     @include bp(mobile) {
         flex-direction: column;
-        max-width: 100%;
+        max-width: 90%;
         padding: 0 1em;
         justify-content: center;
         align-content: center;
@@ -30,17 +34,27 @@
 }
 
 .contacts-map {
-    margin-right: 2em;
+    margin-right: 4em;
     display: inline-block;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
 
     @include bp(mobile) {
-        margin: 0;
-        padding-bottom: 2em;
+        margin-bottom: 2e;;
     }
 
     @include bp(large) {
-        margin-right: 4em;
-        padding-bottom: 2em;
+        margin-right: 6em;
+    }
+
+    &-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
     }
 }
 

@@ -112,6 +112,21 @@
         color: #1616aa;
     }
 
+    .footer-map {
+        position: relative;
+        padding-bottom: 30%;
+        height: 0;
+        overflow: hidden;
+
+        &-map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
     .copiryght {
         text-align: center;
         font-size: 0.6em;
