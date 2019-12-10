@@ -30,11 +30,16 @@
 }
 
 .contacts-map {
-    margin-right: 4em;
+    margin-right: 2em;
     display: inline-block;
 
     @include bp(mobile) {
         margin: 0;
+        padding-bottom: 2em;
+    }
+
+    @include bp(large) {
+        margin-right: 4em;
         padding-bottom: 2em;
     }
 }
@@ -48,6 +53,7 @@
 
     @include bp(phone) {
         margin-left: 0;
+        width: 400px;
     }
 
     legend {
@@ -75,6 +81,10 @@
     padding: 0.3em;
     border: 1px solid #5e5959;
     border-radius: 0.3em;
+
+    @include bp(phone) {
+        width: 350px;
+    }
 }
 
 .form input[type="text"]:hover,
@@ -125,3 +135,4 @@
     }
 
 }
+

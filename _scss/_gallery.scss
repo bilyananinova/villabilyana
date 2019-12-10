@@ -22,7 +22,6 @@
     }
 
     @include bp(mobile) {
-        padding-right: 2em;
         grid-template-columns: repeat(2, 1fr);
     }
 

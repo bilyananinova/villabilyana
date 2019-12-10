@@ -6,6 +6,18 @@ html {
     line-height: 1.5;
     margin: 0 auto;
     font-family: 'Kurale', serif;
+
+    @include bp(phone) {
+        font-size: 12px;
+    }
+
+    @include bp(tablet) {
+        font-size: 14px;
+    }
+
+    @include bp(large) {
+        font-size: 20px;
+    }
 }
 
 body, form, select, option, input, textarea {
