@@ -95,11 +95,18 @@
         display: flex;
         align-items: baseline;
         justify-content: space-around;
+        padding-left: 2em;
+        list-style: none;
 
         @include bp(phone) {
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+        
+        @include bp(mobile) {
+            padding-top: 2em;
+            justify-content: center;
         }
     }
 
@@ -114,9 +121,15 @@
 
     .footer-map {
         position: relative;
-        padding-bottom: 20%;
+        padding-bottom: 40%;
         height: 0;
         overflow: hidden;
+
+        @include bp(phone) {
+            margin-right: 2em;
+            padding-bottom: 50%;
+            width: 380px;
+        }
 
         &-map {
             position: absolute;
@@ -124,7 +137,13 @@
             left: 0;
             width: 100% !important;
             height: 100% !important;
+
+            @include bp(phone) {
+                margin: 0 auto;
+            }
         }
+
+
     }
 
     .copiryght {
