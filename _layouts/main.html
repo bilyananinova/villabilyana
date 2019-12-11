@@ -45,7 +45,7 @@
                             {% assign navigation_pages = site.pages | sort:"order" %}
                                 {% for page in navigation_pages %}
                                     {% if page.title %}
-                                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                                        <li><a href="{{ site.baseurl }}">{{ page.title }}</a></li>
                                     {% endif %}
                                 {% endfor %}
                         </ul>
@@ -62,7 +62,7 @@
                             <li><a href="tel:{{ site.phone_2 }}">{{ site.phone_2 }}</a></li>
                             <li><a href="tel:{{ site.phone_3 }}">{{ site.phone_3 }}</a></li>
                             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                            <li><a href={{ external_url }}><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href={{ site.external_url }}><i class="fab fa-facebook-square"></i></a></li>
                         </ul>
                     </div>
                 </section>
