@@ -37,12 +37,12 @@
     margin-right: 4em;
     display: inline-block;
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 177.77%;
     height: 0;
     overflow: hidden;
 
     @include bp(mobile) {
-        margin-bottom: 2e;;
+        margin-bottom: 2em;
     }
 
     @include bp(large) {
