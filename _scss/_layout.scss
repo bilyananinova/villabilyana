@@ -121,9 +121,25 @@
 
     .footer-map {
         position: relative;
-        padding-bottom: 40%;
+        margin-right: 2em;
         height: 0;
         overflow: hidden;
+
+        @include bp(large) {
+            padding-bottom: 35%;
+        }
+
+        @include bp(desktop) {
+            padding-bottom: 20%;
+        }
+
+        @include bp(mobile) {
+            padding-bottom: 20%;
+        }
+
+        @include bp(tablet) {
+            padding-bottom: 20%;
+        }
 
         @include bp(phone) {
             margin-right: 2em;
@@ -142,8 +158,6 @@
                 margin: 0 auto;
             }
         }
-
-
     }
 
     .copiryght {
