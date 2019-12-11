@@ -1,14 +1,14 @@
 .page {
   .site {
-    background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2, #cbffc2);
+    background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2);
   }    
 
   .site-title a {
-    color: #73ffb9;
+    color: #adffd6;
   }  
 
   .site-footer {
-    background: #90fcc6;
+    background: #b8fddb;
   }
 }
 
@@ -34,6 +34,5 @@
     transform: translate(-50%, -50%);
     max-width: 100%;
     height: auto;
-
   }
 }
