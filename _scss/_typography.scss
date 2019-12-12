@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Kurale&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic');
 
+$site-fontsize: 18px;
+$site-fontfamily: 'Kurale', serif;
+$heading-fontfamily: 'Pacifico', cursive;
+
 html {
-    font-size: 18px;
+    font-size: $site-fontsize;
     line-height: 1.5;
     margin: 0 auto;
-    font-family: 'Kurale', serif;
+    font-family: $site-fontfamily;
 
     @include bp(phone) {
         font-size: 12px;
@@ -13,6 +17,10 @@ html {
 
     @include bp(tablet) {
         font-size: 14px;
+    }
+
+    @include bp(mobile) {
+        font-size: 16px;
     }
 
     @include bp(large) {
@@ -27,7 +35,7 @@ body, form, select, option, input, textarea {
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.5em;
     font-weight: normal;
-    font-family: 'Pacifico', cursive;
+    font-family: $heading-fontfamily;
     letter-spacing: 0.1em;
 }
 

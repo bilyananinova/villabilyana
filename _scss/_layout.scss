@@ -52,9 +52,18 @@
         width: 65em;
         margin: 0 auto;
 
+        @include bp(phone) {
+            margin: 0 auto;
+        }
+
+        @include bp(tablet) {
+            margin: 0 auto;
+        }
+
         @include bp(mobile) {
             padding: 0 1em;
             max-width: 80%;
+            margin: 0 auto;
         }
 
         @include bp(desktop) {
