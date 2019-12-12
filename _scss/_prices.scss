@@ -1,10 +1,15 @@
+
+$background-prices: linear-gradient(to bottom, #ffffff, #f7f2ff, #f4e3ff, #f4d3ff, #f8c2ff);
+$title-prices:#f6c1fdea;
+$footer-prices: #f1a1fc88;
+
 .pageprices {
     .site {
-        background-image: linear-gradient(to bottom, #ffffff, #f7f2ff, #f4e3ff, #f4d3ff, #f8c2ff);
+        background-image: $background-prices;
     }
 
     .site-title a {
-        color: #f6c1fdea;
+        color: $title-prices;
     }
 
     .site-main li::before {
@@ -19,7 +24,7 @@
     }
 
     .site-footer {
-        background: #f1a1fc88;
+        background: $footer-prices;
     }
 }
 

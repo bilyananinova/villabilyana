@@ -1,17 +1,21 @@
 /* Css about contacts page */
 
+$background-pagecontacts: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
+$title-pagecontacts:#fda67d;
+$footer-pagecontacts: #ff9c6e6e;
+
 .pagecontacts {
 
     .site {
-        background-image: linear-gradient(to bottom, #ffffff, #fbebfa, #ffd4e5, #ffbebe, #ffb08c);
+        background-image: $background-pagecontacts;
     }
 
     .site-title a {
-        color: #fda67d;
+        color: $title-pagecontacts;
     }
 
     .site-footer {
-        background: #ff9c6e6e;
+        background: $footer-pagecontacts;
     }
 }
 
@@ -99,7 +103,7 @@
 
     @include bp(phone) {
         margin-left: 0;
-        width: 400px;
+        width: 380px;
     }
 
     legend {
@@ -165,5 +169,14 @@
         background: rgba(255, 155, 110, 1);
         color: #ffffff;
     }
+
+    
 }
 
+.contacts-content {
+    @include bp(mobile) {
+        padding-top: 2em;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

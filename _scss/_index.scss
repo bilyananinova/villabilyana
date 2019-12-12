@@ -1,14 +1,18 @@
+$background-prices: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2);
+$title-prices: #adffd6;
+$footer-prices: #b8fddb;
+
 .page {
   .site {
-    background-image: linear-gradient(to bottom, #ffffff, #effdff, #cbffff, #b6fff2);
+    background-image: $background-prices;
   }    
 
   .site-title a {
-    color: #adffd6;
+    color: $title-prices;
   }  
 
   .site-footer {
-    background: #b8fddb;
+    background: $footer-prices;
   }
 }
 

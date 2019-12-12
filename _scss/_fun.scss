@@ -1,14 +1,19 @@
+
+$background-pagefun: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffdfa5d3, #f5f17894);
+$title-pagefun:#f7f270;
+$footer-pagefun: #f8f36a48;
+
 .pagefun {
     .site {
-        background-image: linear-gradient(to bottom, #ffffff, #fff2ff, #ffe1e2, #ffdfa5d3, #f5f17894);
+        background-image: $background-pagefun;
     }
 
     .site-title a {
-        color: #f7f270;
+        color: $title-pagefun;
     }
 
     .site-footer {
-        background: #f8f36a48;
+        background: $footer-pagefun;
     }
 }    
 

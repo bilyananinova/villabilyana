@@ -1,13 +1,18 @@
+
+$background-gallery: linear-gradient(to bottom, #fcfdfd, #73f87e79);
+$title-gallery:#7bf085;
+$footer-gallery: #a1f1a8;
+
 .pagegallery 
 .site {
-    background-image: linear-gradient(to bottom, #fcfdfd, #73f87e79);
+    background-image: $background-gallery;
 
     .site-title a {
-        color: #7bf085;
+        color: $title-gallery;
     }
 
     .site-footer {
-        background: #a1f1a8;
+        background: $footer-gallery;
     }
 }
 
